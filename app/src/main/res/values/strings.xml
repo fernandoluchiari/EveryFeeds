@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">EveryFeeds</string> 
+
+    <string name="rotulo_opcao" translatable="false">Caso queira que o EveryFeeds utilize sua conta Google: </string> 
+    
+    <string name="rotulo_nao" translatable="false">Não,Obrigado!</string>
+	
+	<string name="action_settings" translatable="false">Settings</string>
+     
+    <string name="msg_sem_conexao" translatable="false">Verifique sua conexão com a internet e tente novamente mais tarde!</string>
+    
+    <string name="msg_sem_feed" translatable="false">Você não possui nenhum feed assinado!</string>
+    
+    <string name="msg_erro_conexao" translatable="false">Ocorreu um erro no seu acesso a internet,tente novamente mais tarde!</string>
+    
+    <!-- Button text -->
+    <string name="btn_logout_from_google" translatable="false">X</string>
+	
+</resources>
