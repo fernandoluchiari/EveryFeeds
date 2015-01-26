@@ -121,9 +121,11 @@ public class GeraComponentes extends AsyncTask<Void, Void, Void> {
 	private Bitmap getImagemFeed(String url) {
 
 		Bitmap mIcon11 = null;
+        BitmapFactory.Options o = new BitmapFactory.Options();
+        o.inSampleSize = 1;
 		try {
 			InputStream in =  new java.net.URL(url.toString()).openStream();
-			mIcon11 = BitmapFactory.decodeStream(in);
+			mIcon11 = BitmapFactory.decodeStream(in,null,o);
 		} catch (Exception e) {
 			Log.e(ERRO_EVERYFEEDS, e.getMessage());
 			e.printStackTrace();

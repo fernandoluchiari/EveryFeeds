@@ -33,9 +33,11 @@ public class SolicitaProfile extends AsyncTask<Void, Void, Void> {
     
     private void getImagemProfile(String url){
          Bitmap mIcon11 = null;
+        BitmapFactory.Options o = new BitmapFactory.Options();
+        o.inSampleSize = 2;
          try {
              InputStream in = new java.net.URL(url).openStream();
-             mIcon11 = BitmapFactory.decodeStream(in);
+             mIcon11 = BitmapFactory.decodeStream(in,null,o);
          } catch (Exception e) {
              Log.e("Error", e.getMessage());
              e.printStackTrace();
@@ -52,7 +54,8 @@ public class SolicitaProfile extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void result) {
     	super.onPostExecute(result);
-    	 principalActivity.AtualizaDadosLogin("Olá "+dadosUsuario.getNome(), dadosUsuario.getEmail(), dadosUsuario.getImagemProfile());
+    	principalActivity.AtualizaDadosLogin("Olá "+dadosUsuario.getNome(), dadosUsuario.getEmail(), dadosUsuario.getImagemProfile());
+        this.cancel(true);
     }
     
     /**

@@ -75,13 +75,14 @@ public class SolicitaCanaisUsuario extends IntentService{
 	
 	private void operacoesFinais(){
 		if ((feedsAtuais.size()!= 0) || (feedsAntigos.size()!=0)) {
+            dadosUsuario = new Usuario();
 			if (!service) {
 				if(feedsAtuais.size()!= 0){
 					Collections.sort(feedsAtuais);
 				}else if(feedsAntigos.size()!=0){
 					Collections.sort(feedsAntigos);
 				}
-				dadosUsuario = new Usuario();
+
 				dadosUsuario.setCanaisSemana(feedsAtuais);
 				dadosUsuario.setCanaisOutros(feedsAntigos);
 				
@@ -93,7 +94,8 @@ public class SolicitaCanaisUsuario extends IntentService{
 			}
 		} 
 		Intent intent = new Intent(NOTIFICATION);
-	    intent.putExtra(DADOS_USUARIO,dadosUsuario);	    
+	    intent.putExtra(DADOS_USUARIO,dadosUsuario);
+        intent.putExtra(SERVICE,service);
 	    sendBroadcast(intent);
 	}
 	

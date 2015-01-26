@@ -89,7 +89,7 @@ public class SolicitaToken extends AsyncTask<Void, Void, Void> {
 			requisitaToken();
 
 		} catch (Exception e) {
-			if (principalActivity != null) {
+			if (principalActivity != null && service == null) {
 				principalActivity.showMessage(e.getMessage());
 			} else {
 				Log.e(ERRO_EVERYFEEDS, e.getMessage());
@@ -102,10 +102,11 @@ public class SolicitaToken extends AsyncTask<Void, Void, Void> {
 	@Override
 	protected void onPostExecute(Void result) {
 		super.onPostExecute(result);
-		if(principalActivity != null){
+		if(principalActivity != null && service ==  null){
 			principalActivity.iniciaSolicitacoes();
 		}else{
 			service.executaSubscriptionsBasic();
 		}
+        this.cancel(true);
 	}
 }

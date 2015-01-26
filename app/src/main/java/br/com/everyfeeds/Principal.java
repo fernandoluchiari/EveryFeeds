@@ -76,8 +76,9 @@ public class Principal extends Activity implements OnClickListener,
 	    @Override
 	    public void onReceive(Context context, Intent intent) {
 	      Bundle bundle = intent.getExtras();
-	      if (bundle != null) {
+	      if (bundle != null && intent.getBooleanExtra("service",false) == false) {
 	        Usuario dadosFeeds = (Usuario)intent.getSerializableExtra("dadosUsuario");
+
 	        dadosUsuario.setCanaisOutros(dadosFeeds.getCanaisOutros());
 	        dadosUsuario.setCanaisSemana(dadosFeeds.getCanaisSemana());
 	        geraTabela();
@@ -242,7 +243,6 @@ public class Principal extends Activity implements OnClickListener,
 	private void signOutFromGplus() {
 		if (isExecutando) {
 			threadProfile.cancel(true);
-			//threadYoutube.cancel(true);
 			threadToken.cancel(true);
 			if(threadGeraComponentes != null){
 				threadGeraComponentes.cancel(true);

@@ -42,11 +42,13 @@ public class MainService extends Service implements ConnectionCallbacks,
 	private String scopes = "oauth2:" + YouTubeScopes.YOUTUBE;
 	private boolean cancelada = false;
 	private Calendar dataUltimaConsulta = null;
+    private String   PACOTE_EVERYFEEDS = "br.com.everyfeeds";
+
 	private BroadcastReceiver receiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			Bundle bundle = intent.getExtras();
-			if (bundle != null) {
+			if (bundle != null && intent.getBooleanExtra("service",false) == true) {
 				Usuario dadosFeeds = (Usuario) intent
 						.getSerializableExtra("dadosUsuario");
 				dadosUsuario.setCanaisSemana(dadosFeeds.getCanaisSemana());
@@ -122,8 +124,8 @@ public class MainService extends Service implements ConnectionCallbacks,
 				this)
 				.setSmallIcon(R.drawable.ic_launcher)
 				.setContentText(msg)
-				.setContentTitle("EveryFeeds")
-				.setTicker("Têm vídeo novo!")
+				.setContentTitle(this.getString(R.string.app_name))
+				.setTicker(this.getString(R.string.msg_videoNovo))
 				.setDefaults(
 						Notification.DEFAULT_LIGHTS
 								| Notification.DEFAULT_VIBRATE
@@ -136,14 +138,14 @@ public class MainService extends Service implements ConnectionCallbacks,
 	}
 
 	public void verificaFeeds(List<Canal> feedsAtuais) {
-		if (!isForeground("br.com.everyfeeds")) {
+		if (!isForeground(PACOTE_EVERYFEEDS)) {
 			if (feedsAtuais.size() != 0) {
 				if (feedsAtuais.size() == 1) {
-					exibeNotificacao("Existe " + feedsAtuais.size()
-							+ " v�deo novo em seus feeds!");
+					exibeNotificacao(this.getString(R.string.msg_existe) + feedsAtuais.size()
+							+ this.getString(R.string.msg_notificacao));
 				} else {
-					exibeNotificacao("Existem " + feedsAtuais.size()
-							+ " v�deos novos em seus feeds!");
+					exibeNotificacao(this.getString(R.string.msg_existe_plural) + feedsAtuais.size()
+							+ this.getString(R.string.msg_notificacao));
 				}
 			}
 		}
@@ -167,13 +169,13 @@ public class MainService extends Service implements ConnectionCallbacks,
 
 	@Override
 	public void onConnected(Bundle connectionHint) {
-		Log.i("EveryFeeds-Service", "conectou ao servi�o google");
+		Log.i("EveryFeeds-Service", "conectou ao serviço google");
 
 	}
 
 	@Override
 	public void onConnectionSuspended(int cause) {
-		Log.i("EveryFeeds-Service", "suspendeu o servi�o google");
+		Log.i("EveryFeeds-Service", "suspendeu o serviço google");
 
 	}
 
