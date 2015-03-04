@@ -46,6 +46,8 @@ public class SolicitaCanaisUsuario extends IntentService{
 
 	private String ERRO_EVERYFEEDS = "Erro EveryFeeds";
 	public static final String NOTIFICATION = "br.com.everyfeeds";
+
+
 	
 	public SolicitaCanaisUsuario() {
 		super("TesteServico");
@@ -246,6 +248,7 @@ public class SolicitaCanaisUsuario extends IntentService{
 				return true;
 			}
 		}
+
 		return false;
 	}
 

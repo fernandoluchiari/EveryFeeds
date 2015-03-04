@@ -2,9 +2,13 @@ package br.com.everyfeeds.service;
 
 import java.io.InputStream;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.ImageView;
@@ -21,7 +25,23 @@ public class GeraComponentes extends AsyncTask<Void, Void, Void> {
 	private Principal principalActivity;
 	private Usuario dadosUsuario;
 	private String ERRO_EVERYFEEDS = "Erro EveryFeeds";
-	
+
+    private BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Bundle bundle = intent.getExtras();
+
+                Usuario dadosFeeds = (Usuario) intent
+                        .getSerializableExtra("dadosUsuario");
+                dadosUsuario.setCanaisSemana(dadosFeeds.getCanaisSemana());
+
+
+        }
+    };
+
+    public GeraComponentes() {
+    }
+
 	public GeraComponentes(Principal principalActivity, Usuario dadosUsuario) {
 		super(); 
 		this.principalActivity = principalActivity;
@@ -119,7 +139,6 @@ public class GeraComponentes extends AsyncTask<Void, Void, Void> {
 	}
 	
 	private Bitmap getImagemFeed(String url) {
-
 		Bitmap mIcon11 = null;
         BitmapFactory.Options o = new BitmapFactory.Options();
         o.inSampleSize = 1;
@@ -129,9 +148,15 @@ public class GeraComponentes extends AsyncTask<Void, Void, Void> {
 		} catch (Exception e) {
 			Log.e(ERRO_EVERYFEEDS, e.getMessage());
 			e.printStackTrace();
-
 		}
 		return mIcon11;
-	}
-	
+
+        Intent intent;
+        intent = new Intent(this, SolicitaImagem.class);
+        intent.putExtra("DADOS_CANAL", dadosUsuario);
+        intent.putExtra("service", true);
+        startService(intent);
+
+    }
+
 }

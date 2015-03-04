@@ -6,112 +6,112 @@
         jumboMode="false"
         revision="21.1.2"
         sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\classes-2aaed5bc74b43c6a48ca42bea0b8a0c710fd4000.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\classes-2aaed5bc74b43c6a48ca42bea0b8a0c710fd4000.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\google-oauth-client-1.17.0-rc.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="1c9842ee2c931ac6865304025e20b68be65c427b">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\google-oauth-client-1.17.0-rc-f1dd674ba7a3e57d931e70be0bd9c2350b1be4de.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\google-oauth-client-1.17.0-rc-f1dd674ba7a3e57d931e70be0bd9c2350b1be4de.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\16.0.1\5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5\guava-16.0.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\guava-16.0.1-7103cf081988ba820f31d61b4019c8041ac5d793.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\guava-16.0.1-7103cf081988ba820f31d61b4019c8041ac5d793.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-a5f163748a75528e379a75fc4a5c15da7246b9ce.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\support-annotations-21.0.0-a5f163748a75528e379a75fc4a5c15da7246b9ce.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\google-api-client-1.17.0-rc.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="d6030b729a2c0f277bbd65aecc53b0156123c1d7">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\google-api-client-1.17.0-rc-1323554caee60baeb6eaa6b5e07959299ba17c64.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\google-api-client-1.17.0-rc-1323554caee60baeb6eaa6b5e07959299ba17c64.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\google-api-services-youtube-v3-rev100-1.17.0-rc.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c201d7e64050c78153aa75d35397564745f14a3e">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\google-api-services-youtube-v3-rev100-1.17.0-rc-57b524b95c66c679f4274e1de0bffb4ad62ccba1.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\google-api-services-youtube-v3-rev100-1.17.0-rc-57b524b95c66c679f4274e1de0bffb4ad62ccba1.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\jackson-core-asl-1.9.11.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="e32303ef8bd18a5c9272780d49b81c95e05ddf43">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\jackson-core-asl-1.9.11-d4c1bddfe1545d6fe0fb3ba844b95b03c7f89055.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\jackson-core-asl-1.9.11-d4c1bddfe1545d6fe0fb3ba844b95b03c7f89055.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\google-http-client-1.17.0-rc.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="8c3af35a458e5430f9d2f9bf9f12117673500ba0">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\google-http-client-1.17.0-rc-1e4d91a9e18e651f62a3d726572a8fe89347e6e2.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\google-http-client-1.17.0-rc-1e4d91a9e18e651f62a3d726572a8fe89347e6e2.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\jsr305-1.3.9.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\jsr305-1.3.9-c946d028a1afce8e46df232f72fb4036b95e3473.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\jsr305-1.3.9-c946d028a1afce8e46df232f72fb4036b95e3473.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.1\2e66da15851f9f5b5079228f856c2f090ba98c38\gson-2.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2e66da15851f9f5b5079228f856c2f090ba98c38">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\gson-2.1-37253431cef4f2d3fefb2ce532d366703aabe88d.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\gson-2.1-37253431cef4f2d3fefb2ce532d366703aabe88d.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\classes-160e707ca85d9d87d45758748f2ed23a40164aae.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\classes-160e707ca85d9d87d45758748f2ed23a40164aae.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\jackson-core-2.1.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\jackson-core-2.1.3-36aa964907adddfd13d8d87b158ea4543be75050.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\jackson-core-2.1.3-36aa964907adddfd13d8d87b158ea4543be75050.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\2.4.1\c589509ec6fd86d5d2fda37e07c08538235d3b9\protobuf-java-2.4.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="0c589509ec6fd86d5d2fda37e07c08538235d3b9">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\protobuf-java-2.4.1-ae8640c24bfee13a45f3103b2d571e33f512406c.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\protobuf-java-2.4.1-ae8640c24bfee13a45f3103b2d571e33f512406c.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\google-http-client-android-1.17.0-rc.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c6ef8e9d839d3aa873651214975c9ce4cbe1709b">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\google-http-client-android-1.17.0-rc-1467feb8d543a5ac36743031af399ffe7f641165.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\google-http-client-android-1.17.0-rc-1467feb8d543a5ac36743031af399ffe7f641165.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-12b61351b26621628368e0f26db2d80833d6ecf8.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\internal_impl-21.0.0-12b61351b26621628368e0f26db2d80833d6ecf8.jar" />
     </item>
     <item
         jar="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\libs\google-http-client-jackson2-1.17.0-rc.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="a9e93a7b00a0055b4ec7be96df40e18303ecbcfc">
-        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\debug\google-http-client-jackson2-1.17.0-rc-2489a175df79adc689d1bc415ff984216ee837cc.jar" />
+        <dex dex="C:\Users\Luchiari\AndroidstudioProjects\EveryFeeds\app\build\intermediates\pre-dexed\release\google-http-client-jackson2-1.17.0-rc-2489a175df79adc689d1bc415ff984216ee837cc.jar" />
     </item>
 
 </items>
