@@ -1,6 +1,6 @@
 package br.com.everyfeeds.service;
 
-import java.io.InputStream;
+
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,6 +15,9 @@ import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import java.net.URL;
+
 import br.com.everyfeeds.Principal;
 import br.com.everyfeeds.R;
 import br.com.everyfeeds.R.string;
@@ -143,19 +146,14 @@ public class GeraComponentes extends AsyncTask<Void, Void, Void> {
         BitmapFactory.Options o = new BitmapFactory.Options();
         o.inSampleSize = 1;
 		try {
-			InputStream in =  new java.net.URL(url.toString()).openStream();
-			mIcon11 = BitmapFactory.decodeStream(in,null,o);
+			URL imageURL = new URL(url);
+			mIcon11 = BitmapFactory.decodeStream(imageURL.openConnection().getInputStream());
 		} catch (Exception e) {
 			Log.e(ERRO_EVERYFEEDS, e.getMessage());
 			e.printStackTrace();
 		}
 		return mIcon11;
 
-        Intent intent;
-        intent = new Intent(this, SolicitaImagem.class);
-        intent.putExtra("DADOS_CANAL", dadosUsuario);
-        intent.putExtra("service", true);
-        startService(intent);
 
     }
 

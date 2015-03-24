@@ -47,7 +47,8 @@ public class SolicitaCanaisUsuario extends IntentService{
 	private String ERRO_EVERYFEEDS = "Erro EveryFeeds";
 	public static final String NOTIFICATION = "br.com.everyfeeds";
 
-
+    private long tempoInicial = 0;
+    private long tempofinal = 0;
 	
 	public SolicitaCanaisUsuario() {
 		super("TesteServico");
@@ -57,7 +58,8 @@ public class SolicitaCanaisUsuario extends IntentService{
 	protected void onHandleIntent(Intent intent) {
 		token = (Token)intent.getSerializableExtra(TOKEN);
 		service = intent.getBooleanExtra(SERVICE, false);
-		try {
+        tempoInicial = System.currentTimeMillis();
+        try {
 			solicitaSubscriptions();
 			if(service){
 				solicitaInformacaoYouTubeBasic();
@@ -72,7 +74,8 @@ public class SolicitaCanaisUsuario extends IntentService{
 			Log.e(ERRO_EVERYFEEDS, e.getMessage());
 			e.printStackTrace();
 		}
-		operacoesFinais();
+        tempofinal = System.currentTimeMillis();
+        operacoesFinais();
 	}
 	
 	private void operacoesFinais(){
@@ -98,6 +101,8 @@ public class SolicitaCanaisUsuario extends IntentService{
 		Intent intent = new Intent(NOTIFICATION);
 	    intent.putExtra(DADOS_USUARIO,dadosUsuario);
         intent.putExtra(SERVICE,service);
+        long tempoFinal = tempofinal-tempoInicial;
+        intent.putExtra("TEMPOGASTO",tempoFinal);
 	    sendBroadcast(intent);
 	}
 	

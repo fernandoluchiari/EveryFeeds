@@ -1,5 +1,6 @@
 package br.com.everyfeeds;
 
+import java.text.DecimalFormat;
 import java.util.Calendar;
 
 import android.app.Activity;
@@ -78,7 +79,11 @@ public class Principal extends Activity implements OnClickListener,
 	      Bundle bundle = intent.getExtras();
 	      if (bundle != null && intent.getBooleanExtra("service",false) == false) {
 	        Usuario dadosFeeds = (Usuario)intent.getSerializableExtra("dadosUsuario");
+            long tempo = intent.getLongExtra("TEMPOGASTO",0);
 
+            double tempoMin = (double)tempo / 60000;
+
+            showMessage(new DecimalFormat("0.00").format(tempoMin) +" tempo gasto!");
 	        dadosUsuario.setCanaisOutros(dadosFeeds.getCanaisOutros());
 	        dadosUsuario.setCanaisSemana(dadosFeeds.getCanaisSemana());
 	        geraTabela();
@@ -253,7 +258,6 @@ public class Principal extends Activity implements OnClickListener,
 		if (mGoogleApiClient.isConnected()) {
 			Plus.AccountApi.clearDefaultAccount(mGoogleApiClient);
 			mGoogleApiClient.disconnect();
-			mGoogleApiClient.connect();
 		}
 		Intent intent = new Intent(this, Inicial.class);
 		startActivity(intent);
