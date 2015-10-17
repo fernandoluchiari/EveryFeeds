@@ -81,11 +81,7 @@ public class MainService extends Service implements ConnectionCallbacks,
 		if (!mGoogleApiClient.isConnected()) {
 			mGoogleApiClient.connect();
 		}
-		if (!cancelada) {
-			Log.i("EveryFeeds-Service", "Servico iniciado..");
-			Log.i("EveryFeeds-Service", "Iniciando requisicao de dados...");
-			executaTarefas();
-		}
+
 		return (super.onStartCommand(intent, flags, startId));
 	}
 
@@ -170,7 +166,11 @@ public class MainService extends Service implements ConnectionCallbacks,
 	@Override
 	public void onConnected(Bundle connectionHint) {
 		Log.i("EveryFeeds-Service", "conectou ao serviço google");
-
+		if (!cancelada) {
+			Log.i("EveryFeeds-Service", "Servico iniciado..");
+			Log.i("EveryFeeds-Service", "Iniciando requisicao de dados...");
+			executaTarefas();
+		}
 	}
 
 	@Override

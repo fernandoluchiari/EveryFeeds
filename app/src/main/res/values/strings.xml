@@ -13,8 +13,8 @@
     
     <string name="msg_erro_conexao" translatable="false">Ocorreu um erro no seu acesso a internet,tente novamente mais tarde!</string>
     <string name="msg_notificacao" translatable="false"> vídeos novos em seus feeds!</string>
-    <string name="msg_existe" translatable="false"> Existe</string>
-    <string name="msg_existe_plural" translatable="false"> Existem</string>
+    <string name="msg_existe" translatable="false"> Existe </string>
+    <string name="msg_existe_plural" translatable="false"> Existem </string>
     <string name="msg_videoNovo" translatable="false"> Têm vídeo Novo</string>
 
 

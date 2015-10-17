@@ -122,7 +122,7 @@ public class Principal extends Activity implements OnClickListener,
 	
 	@Override
 	protected void onResume() {
-		registerReceiver(receiver, new IntentFilter(SolicitaCanaisUsuario.NOTIFICATION));		
+		registerReceiver(receiver, new IntentFilter(SolicitaCanaisUsuario.NOTIFICATION));
 		super.onResume();
 	}
 	
@@ -142,12 +142,15 @@ public class Principal extends Activity implements OnClickListener,
 
 	protected void onStop() {
 		super.onStop();
+		if(isExecutando){
+			iniciaServico(true);
+		}
 		if (mGoogleApiClient.isConnected()) {
 			mGoogleApiClient.disconnect();
 		}
 		unregisterReceiver(receiver);
 	}
-	
+
 
 	@Override
 	public void onConnectionFailed(ConnectionResult result) {
@@ -177,7 +180,7 @@ public class Principal extends Activity implements OnClickListener,
 					dadosUsuario);
 			threadToken.execute();
 			threadProfile.execute();
-			iniciaServico(true);
+
 		}
 	}
 
@@ -254,6 +257,7 @@ public class Principal extends Activity implements OnClickListener,
 			}
 			iniciaAlarm(false);
 			iniciaServico(false);
+			isExecutando = false;
 		}
 		if (mGoogleApiClient.isConnected()) {
 			Plus.AccountApi.clearDefaultAccount(mGoogleApiClient);

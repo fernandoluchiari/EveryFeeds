@@ -81,8 +81,8 @@
     <!-- From: file:/C:/Users/Luchiari/AndroidstudioProjects/EveryFeeds/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="msg_erro_conexao" translatable="false">Ocorreu um erro no seu acesso a internet,tente novamente mais tarde!</string>
-    <string name="msg_existe" translatable="false"> Existe</string>
-    <string name="msg_existe_plural" translatable="false"> Existem</string>
+    <string name="msg_existe" translatable="false"> Existe </string>
+    <string name="msg_existe_plural" translatable="false"> Existem </string>
     <string name="msg_notificacao" translatable="false"> vídeos novos em seus feeds!</string>
     <string name="msg_sem_conexao" translatable="false">Verifique sua conexão com a internet e tente novamente mais tarde!</string>
     <string name="msg_sem_feed" translatable="false">Você não possui nenhum feed assinado!</string>
